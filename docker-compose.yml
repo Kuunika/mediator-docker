@@ -37,4 +37,4 @@ services:
       - OHSP_PASSWORD=${OHSP_PASSWORD}
       - COVID_DASHBOARD_API_URL=${COVID_DASHBOARD_API_URL}
     ports:
-      - "3000:3000"
+      - "${OHSP_API_PORT}:${OHSP_API_PORT}"
